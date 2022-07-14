@@ -40,7 +40,7 @@ function suma(x, y) {
 }
 
 function resta(x, y) {
-  // Resta "y" de "x" y devuelve el valor
+ // Resta "y" de "x" y devuelve el valor
   // Tu código:
   return x - y ;
 }
@@ -72,7 +72,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length === str2) {
+  if (str1.length === str2.length) {
     return true;
   } else {
     return false;
@@ -171,15 +171,18 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) {
-    return "Es positivo";
-  } 
-  else if (numero < 0) {
-    return "Es negativo";
-  } 
-  else (number === 0);
+  if(numero === 0) {
     return false;
+  }
+  else if(numero > 0) {
+    return "Es positivo";
+  }
+  else {
+    return "Es negativo";
+  }
 }
+
+
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
@@ -230,7 +233,6 @@ function deEuroAdolar(euro){
   //Escribe tu código aquí
   return euro * 1.20;
 }
-
 
 function esVocal(letra){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
